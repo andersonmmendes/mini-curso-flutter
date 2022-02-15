@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: HomeController(
-      child: const HomeWidget(),
+      child: const HomePage(),
     ));
   }
 }
