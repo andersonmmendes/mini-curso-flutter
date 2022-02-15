@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/home_controller.dart';
 import 'package:hello_world/home_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -6,6 +7,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: HomeWidget());
+    return MaterialApp(
+        home: HomeController(
+      child: const HomeWidget(),
+    ));
   }
 }
